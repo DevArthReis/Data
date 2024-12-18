@@ -1,8 +1,11 @@
 ﻿using System;
 
-namespace Data{
-    class Program{
-        static void Main(string[] args){
+namespace Data
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             Console.Clear();
             //var Data = new DateTime(2024,12,18);
             var Data = DateTime.Now;
@@ -16,13 +19,20 @@ namespace Data{
             Console.WriteLine($"Ao chegar as {Data} vc sera avisado ");
             Console.WriteLine($"Qual sera o dia que vc sera avisado {Data.DayOfWeek}");
             Console.WriteLine($"Qual sera o ano que vc sera avisado {Data.DayOfYear}");
-            var Formatada = String.Format("{0:dd/MM/yyyy HH:mm:ss}",Data);
-            
+            var Formatada = String.Format("{0:dd/MM/yyyy HH:mm:ss}", Data);
+
+
+
+            Console.WriteLine(Data.AddDays(12));
+            Console.WriteLine(Data.AddMonths(1));
+            Console.WriteLine(Data.AddYears(1));
+
+
             Console.WriteLine(Formatada);
-            
-            
-            
-            
+
+
+
+
         }
     }
 }
