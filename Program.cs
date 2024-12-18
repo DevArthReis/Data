@@ -38,6 +38,10 @@ namespace Data
             if(Data == DateTime.Now.Date){
                 Console.WriteLine("As datas são iguais");
             }
+            var pt = new System.Globalization.CultureInfo("pt-PT");
+             var br = new System.Globalization.CultureInfo("pt-BR");
+            
+            Console.WriteLine(DateTime.Now.ToString("D",br));//Essa parece ser a melhor forma de mexer com datas no c#
                 
 
 
