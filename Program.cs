@@ -20,6 +20,12 @@ namespace Data
             Console.WriteLine($"Qual sera o dia que vc sera avisado {Data.DayOfWeek}");
             Console.WriteLine($"Qual sera o ano que vc sera avisado {Data.DayOfYear}");
             var Formatada = String.Format("{0:dd/MM/yyyy HH:mm:ss}", Data);
+            if(Data == DateTime.Now){
+                Console.WriteLine("As datas são iguais");
+            }
+            else{
+                Console.WriteLine("As datas são difretes");
+            }
 
 
 
@@ -29,6 +35,10 @@ namespace Data
 
 
             Console.WriteLine(Formatada);
+            if(Data == DateTime.Now.Date){
+                Console.WriteLine("As datas são iguais");
+            }
+                
 
 
 
