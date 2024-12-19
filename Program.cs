@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Data
 {
@@ -42,11 +43,13 @@ namespace Data
              var br = new System.Globalization.CultureInfo("pt-BR");
             
             Console.WriteLine(DateTime.Now.ToString("D",br));//Essa parece ser a melhor forma de mexer com datas no c#
-                
+            Console.WriteLine(DateTime.DaysInMonth(2024,2));  
+           
 
 
 
 
         }
+        
     }
 }
